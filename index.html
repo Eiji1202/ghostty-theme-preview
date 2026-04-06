@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ghostty Theme Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1 class="sr-only">Ghostty Theme Preview</h1>
+<div class="app">
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <div class="logo">
+        <span class="logo-title">Ghostty Theme Preview</span>
+      </div>
+      <div class="logo-sub">for Ghostty / cmux</div>
+    </div>
+    <div class="search-wrap">
+      <input class="search-input" type="text" id="search" placeholder="Search themes..." oninput="renderList()">
+    </div>
+    <div class="filters">
+      <button class="filter-btn active" onclick="setFilter('all',this)">All</button>
+      <button class="filter-btn" onclick="setFilter('dark',this)">Dark</button>
+      <button class="filter-btn" onclick="setFilter('light',this)">Light</button>
+    </div>
+    <div class="fav-toggle">
+      <button class="fav-toggle-btn active" onclick="setTab('all',this)">All themes</button>
+      <button class="fav-toggle-btn" onclick="setTab('fav',this)">&hearts; Favorites</button>
+    </div>
+    <div class="theme-count" id="theme-count">Loading...</div>
+    <div class="theme-list" id="theme-list">
+      <div class="loading"><span class="loading-text">loading themes...</span></div>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+    <div class="topbar">
+      <div style="display:flex;align-items:center;">
+        <span class="theme-title" id="theme-title">Select a theme</span>
+        <span class="theme-badge" id="theme-badge"></span>
+      </div>
+    </div>
+    <div class="content">
+      <div class="preview-panel" id="preview-panel">
+        <div class="empty" id="empty-state">
+          <div class="empty-title">No theme selected</div>
+          <div class="empty-sub">Pick a theme from the sidebar</div>
+        </div>
+        <div id="preview-content" style="display:none;flex-direction:column;gap:16px;">
+          <p class="split-preview-hint">Split preview — click a pane to focus it. The dimmer pane uses <strong>unfocused-split-opacity</strong>.</p>
+          <div class="terminal-wrap" id="terminal-wrap">
+            <div class="terminal-titlebar" id="term-titlebar">
+              <div class="term-dot term-dot-r"></div>
+              <div class="term-dot term-dot-y"></div>
+              <div class="term-dot term-dot-g"></div>
+              <span class="terminal-title-text" id="term-title-text"></span>
+            </div>
+            <div class="terminal-split" id="terminal-split" role="group" aria-label="Terminal split preview">
+              <div class="terminal-pane terminal-pane--focused" id="terminal-pane-left" role="button" tabindex="0" aria-label="Left split — click to focus">
+                <div class="pane-bg-image" id="pane-bg-left"></div>
+                <div class="terminal-pane-body" id="terminal-body-left" style="position:relative;z-index:1;"></div>
+              </div>
+              <div class="terminal-pane" id="terminal-pane-right" role="button" tabindex="0" aria-label="Right split — click to focus">
+                <div class="pane-bg-image" id="pane-bg-right"></div>
+                <div class="terminal-pane-body" id="terminal-body-right" style="position:relative;z-index:1;"></div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="section-label">Color palette</div>
+            <div class="palette-grid" id="palette-grid"></div>
+          </div>
+          <div id="config-section" style="display:none;">
+            <div class="section-label">Generated config</div>
+            <div class="config-output" id="config-output" style="position:relative;"><span id="config-text"># Select a theme to generate config</span><button class="copy-btn" id="copy-btn" onclick="copyConfig()">Copy config</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Settings panel -->
+      <div class="settings-panel">
+        <!-- Font -->
+        <div class="setting-group">
+          <div class="setting-group-title" onclick="this.parentElement.classList.toggle('collapsed')">Font</div>
+          <div class="setting-group-body"><div class="setting-group-body-inner">
+          <div class="setting-row">
+            <div class="setting-row-header">
+              <span class="setting-key" id="key-font-family">font-family</span>
+              <div class="toggle">
+                <input type="checkbox" id="tog-font-family" checked onchange="onToggle('font-family')" aria-label="include font-family">
+                <label for="tog-font-family" class="toggle-track"></label>
+                <span class="toggle-thumb" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="setting-control" id="ctrl-font-family">
+              <select class="setting-input" id="font-family" onchange="updatePreview()" aria-labelledby="key-font-family">
+                <option value="JetBrains Mono">JetBrains Mono</option>
+                <option value="Fira Code">Fira Code</option>
+                <option value="SF Mono">SF Mono</option>
+                <option value="Menlo">Menlo</option>
+                <option value="Monaco">Monaco</option>
+                <option value="Courier New">Courier New</option>
+                <option value="monospace">monospace (system)</option>
+              </select>
+            </div>
+          </div>
+          <div class="setting-row">
+            <div class="setting-row-header">
+              <span class="setting-key" id="key-font-size">font-size <span class="setting-val" id="font-size-val">14</span></span>
+              <div class="toggle">
+                <input type="checkbox" id="tog-font-size" checked onchange="onToggle('font-size')" aria-label="include font-size">
+                <label for="tog-font-size" class="toggle-track"></label>
+                <span class="toggle-thumb" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="setting-control" id="ctrl-font-size">
+              <input class="setting-range" type="range" id="font-size" min="10" max="22" value="14" oninput="updateFontSize()" aria-labelledby="key-font-size">
+            </div>
+          </div>
+          </div></div>
+        </div>
+
+        <!-- Cursor -->
+        <div class="setting-group">
+          <div class="setting-group-title" onclick="this.parentElement.classList.toggle('collapsed')">Cursor</div>
+          <div class="setting-group-body"><div class="setting-group-body-inner">
+          <div class="setting-row">
+            <div class="setting-row-header">
+              <span class="setting-key" id="key-cursor-style">cursor-style</span>
+              <div class="toggle">
+                <input type="checkbox" id="tog-cursor-style" checked onchange="onToggle('cursor-style'); updatePreview();" aria-label="include cursor-style">
+                <label for="tog-cursor-style" class="toggle-track"></label>
+                <span class="toggle-thumb" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="setting-control" id="ctrl-cursor-style">
+              <select class="setting-input" id="cursor-style" onchange="updatePreview()" aria-labelledby="key-cursor-style">
+                <option value="block">block</option>
+                <option value="bar">bar</option>
+                <option value="underline">underline</option>
+              </select>
+            </div>
+          </div>
+          <div class="setting-row">
+            <div class="setting-row-header">
+              <span class="setting-key" id="key-cursor-color">cursor-color</span>
+              <div class="toggle">
+                <input type="checkbox" id="tog-cursor-color" onchange="onToggle('cursor-color'); updatePreview();" aria-label="include cursor-color">
+                <label for="tog-cursor-color" class="toggle-track"></label>
+                <span class="toggle-thumb" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="setting-control disabled" id="ctrl-cursor-color">
+              <input type="color" class="setting-input" id="cursor-color" value="#e4e4e7" oninput="updatePreview()" style="height:32px;padding:2px 4px;cursor:pointer;" aria-labelledby="key-cursor-color">
+            </div>
+          </div>
+          </div></div>
+        </div>
+
+        <!-- Window -->
+        <div class="setting-group">
+          <div class="setting-group-title" onclick="this.parentElement.classList.toggle('collapsed')">Window</div>
+          <div class="setting-group-body"><div class="setting-group-body-inner">
+          <div class="setting-row">
+            <div class="setting-row-header">
+              <span class="setting-key" id="key-window-padding-x">window-padding-x <span class="setting-val" id="padding-x-val">0</span></span>
+              <div class="toggle">
+                <input type="checkbox" id="tog-window-padding-x" checked onchange="onToggle('window-padding-x'); updatePadding();" aria-label="include window-padding-x">
+                <label for="tog-window-padding-x" class="toggle-track"></label>
+                <span class="toggle-thumb" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="setting-control" id="ctrl-window-padding-x">
+              <input class="setting-range" type="range" id="window-padding-x" min="0" max="40" value="0" oninput="updatePadding()" aria-labelledby="key-window-padding-x">
+            </div>
+          </div>
+          <div class="setting-row">
+            <div class="setting-row-header">
+              <span class="setting-key" id="key-window-padding-y">window-padding-y <span class="setting-val" id="padding-y-val">0</span></span>
+              <div class="toggle">
+                <input type="checkbox" id="tog-window-padding-y" checked onchange="onToggle('window-padding-y'); updatePadding();" aria-label="include window-padding-y">
+                <label for="tog-window-padding-y" class="toggle-track"></label>
+                <span class="toggle-thumb" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="setting-control" id="ctrl-window-padding-y">
+              <input class="setting-range" type="range" id="window-padding-y" min="0" max="40" value="0" oninput="updatePadding()" aria-labelledby="key-window-padding-y">
+            </div>
+          </div>
+          <div class="setting-row">
+            <div class="setting-row-header">
+              <span class="setting-key" id="key-bg-opacity">background-opacity <span class="setting-val" id="opacity-val">1.0</span></span>
+              <div class="toggle">
+                <input type="checkbox" id="tog-bg-opacity" checked onchange="onToggle('bg-opacity')" aria-label="include background-opacity">
+                <label for="tog-bg-opacity" class="toggle-track"></label>
+                <span class="toggle-thumb" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="setting-control" id="ctrl-bg-opacity">
+              <input class="setting-range" type="range" id="bg-opacity" min="0.1" max="1" step="0.05" value="1" oninput="updateOpacity()" aria-labelledby="key-bg-opacity">
+            </div>
+          </div>
+          <div class="setting-row">
+            <div class="setting-row-header">
+              <span class="setting-key" id="key-unfocused-opacity">unfocused-split-opacity <span class="setting-val" id="unfocused-val">0.85</span></span>
+              <div class="toggle">
+                <input type="checkbox" id="tog-unfocused-opacity" checked onchange="onToggle('unfocused-opacity')" aria-label="include unfocused-split-opacity">
+                <label for="tog-unfocused-opacity" class="toggle-track"></label>
+                <span class="toggle-thumb" aria-hidden="true"></span>
+              </div>
+            </div>
+            <p class="setting-hint" id="hint-unfocused-opacity">When the window has <strong>splits</strong>, this is the opacity of panes that <strong>don't have focus</strong>. Lower = dimmer; <code>1</code> = no dimming.</p>
+            <div class="setting-control" id="ctrl-unfocused-opacity">
+              <input class="setting-range" type="range" id="unfocused-opacity" min="0.1" max="1" step="0.05" value="0.85" oninput="updateUnfocused()" aria-labelledby="key-unfocused-opacity" aria-describedby="hint-unfocused-opacity">
+            </div>
+          </div>
+          <div class="setting-row">
+            <div class="setting-row-header">
+              <span class="setting-key" id="key-foreground">foreground</span>
+              <div class="toggle">
+                <input type="checkbox" id="tog-foreground" onchange="onToggle('foreground'); updateCustomColors();" aria-label="include foreground">
+                <label for="tog-foreground" class="toggle-track"></label>
+                <span class="toggle-thumb" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="setting-control disabled" id="ctrl-foreground">
+              <input type="color" class="setting-input" id="foreground-color" value="#e4e4e7" oninput="updateCustomColors()" style="height:32px;padding:2px 4px;cursor:pointer;" aria-labelledby="key-foreground">
+            </div>
+          </div>
+          <div class="setting-row">
+            <div class="setting-row-header">
+              <span class="setting-key" id="key-focus-color">focused-split-color</span>
+              <div class="toggle">
+                <input type="checkbox" id="tog-focus-color" checked onchange="onToggle('focus-color'); updateFocusColor();" aria-label="include focused-split-color">
+                <label for="tog-focus-color" class="toggle-track"></label>
+                <span class="toggle-thumb" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="setting-control" id="ctrl-focus-color">
+              <input type="color" class="setting-input" id="focus-color" value="#6366f1" oninput="updateFocusColor()" style="height:32px;padding:2px 4px;cursor:pointer;" aria-labelledby="key-focus-color">
+            </div>
+          </div>
+          <div class="setting-row">
+            <div class="setting-row-header">
+              <span class="setting-key" id="key-split-divider">split-divider-size <span class="setting-val" id="split-divider-val">1</span></span>
+              <div class="toggle">
+                <input type="checkbox" id="tog-split-divider" checked onchange="onToggle('split-divider')" aria-label="include split-divider-size">
+                <label for="tog-split-divider" class="toggle-track"></label>
+                <span class="toggle-thumb" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="setting-control" id="ctrl-split-divider">
+              <input class="setting-range" type="range" id="split-divider" min="0" max="10" value="1" oninput="updateSplitDivider()" aria-labelledby="key-split-divider">
+            </div>
+          </div>
+          </div></div>
+        </div>
+
+        <!-- Background -->
+        <div class="setting-group">
+          <div class="setting-group-title" onclick="this.parentElement.classList.toggle('collapsed')">Background</div>
+          <div class="setting-group-body"><div class="setting-group-body-inner">
+          <div class="setting-row">
+            <div class="setting-row-header">
+              <span class="setting-key" id="key-background">background</span>
+              <div class="toggle">
+                <input type="checkbox" id="tog-background" onchange="onToggle('background'); updateCustomColors();" aria-label="include background">
+                <label for="tog-background" class="toggle-track"></label>
+                <span class="toggle-thumb" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="setting-control disabled" id="ctrl-background">
+              <input type="color" class="setting-input" id="background-color" value="#0e0e10" oninput="updateCustomColors()" style="height:32px;padding:2px 4px;cursor:pointer;" aria-labelledby="key-background">
+            </div>
+          </div>
+          <div class="setting-row">
+            <div class="setting-row-header">
+              <span class="setting-key" id="key-bg-image">background-image</span>
+              <div class="toggle">
+                <input type="checkbox" id="tog-bg-image" onchange="onToggleBgImage()" aria-label="include background-image">
+                <label for="tog-bg-image" class="toggle-track"></label>
+                <span class="toggle-thumb" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="setting-control disabled" id="ctrl-bg-image">
+              <div class="image-dropzone" id="image-dropzone"
+                ondragover="onDragOver(event)" ondragleave="onDragLeave(event)" ondrop="onDrop(event)">
+                <input type="file" accept="image/*" onchange="onFileSelect(event)" id="file-input">
+                <div class="image-dropzone-text" id="dropzone-text">
+                  <span>Click to select</span> or drag &amp; drop<br>PNG / JPG
+                </div>
+                <img class="image-preview-thumb" id="image-preview-thumb" alt="" width="1" height="1" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+                <button class="image-clear-btn" id="image-clear-btn" onclick="clearImage(event)">&cross; Remove image</button>
+              </div>
+              <div style="margin-top:8px;">
+                <div class="path-label">Path for config (your local path)</div>
+                <input class="setting-input" type="text" id="bg-image-path" placeholder="/Users/you/Pictures/wallpaper.png" oninput="renderConfig()">
+              </div>
+            </div>
+          </div>
+          <!-- image opacity -->
+          <div class="setting-row" id="row-bg-image-opacity" style="display:none;">
+            <div class="setting-row-header">
+              <span class="setting-key" id="key-bg-image-opacity">background-image-opacity <span class="setting-val" id="bg-image-opacity-val">0.15</span></span>
+              <div class="toggle">
+                <input type="checkbox" id="tog-bg-image-opacity" checked onchange="onToggle('bg-image-opacity')" aria-label="include background-image-opacity">
+                <label for="tog-bg-image-opacity" class="toggle-track"></label>
+                <span class="toggle-thumb" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="setting-control" id="ctrl-bg-image-opacity">
+              <input class="setting-range" type="range" id="bg-image-opacity" min="0.01" max="1" step="0.01" value="0.15" oninput="updateBgImageOpacity()" aria-labelledby="key-bg-image-opacity">
+            </div>
+          </div>
+          <!-- image fit -->
+          <div class="setting-row" id="row-bg-image-fit" style="display:none;">
+            <div class="setting-row-header">
+              <span class="setting-key" id="key-bg-image-fit">background-image-fit</span>
+              <div class="toggle">
+                <input type="checkbox" id="tog-bg-image-fit" checked onchange="onToggle('bg-image-fit')" aria-label="include background-image-fit">
+                <label for="tog-bg-image-fit" class="toggle-track"></label>
+                <span class="toggle-thumb" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="setting-control" id="ctrl-bg-image-fit">
+              <select class="setting-input" id="bg-image-fit" onchange="updateBgImagePreview(); renderConfig();" aria-labelledby="key-bg-image-fit">
+                <option value="cover">cover</option>
+                <option value="contain">contain</option>
+                <option value="stretch">stretch</option>
+                <option value="none">none</option>
+              </select>
+            </div>
+          </div>
+          </div></div>
+        </div>
+
+        <!-- macOS -->
+        <div class="setting-group">
+          <div class="setting-group-title" onclick="this.parentElement.classList.toggle('collapsed')">macOS</div>
+          <div class="setting-group-body"><div class="setting-group-body-inner">
+          <div class="setting-row">
+            <div class="setting-row-header">
+              <span class="setting-key" id="key-option-alt">macos-option-as-alt</span>
+              <div class="toggle">
+                <input type="checkbox" id="tog-option-alt" checked onchange="onToggle('option-alt')" aria-label="include macos-option-as-alt">
+                <label for="tog-option-alt" class="toggle-track"></label>
+                <span class="toggle-thumb" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="setting-control" id="ctrl-option-alt">
+              <select class="setting-input" id="option-alt" onchange="renderConfig()" aria-labelledby="key-option-alt">
+                <option value="true">true</option>
+                <option value="false">false</option>
+              </select>
+            </div>
+          </div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/terminal.js" defer></script>
+<script src="js/config.js" defer></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+name: Update themes
+
+on:
+  schedule:
+    - cron: '0 0 * * 1'  # 毎週月曜日 UTC 0:00
+  workflow_dispatch:      # 手動実行も可能
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Run make themes
+        run: make themes
+
+      - name: Check for changes
+        id: diff
+        run: |
+          git diff --quiet themes.json || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push if changed
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add themes.json
+          git commit -m "chore: update themes.json"
+          git push
