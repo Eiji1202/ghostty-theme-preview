@@ -98,9 +98,10 @@ html, body { height: 100%; overflow: hidden; background: var(--bg); color: var(-
   cursor: pointer; transition: opacity 0.15s ease, box-shadow 0.15s ease; background: transparent; position: relative;
 }
 .terminal-pane:first-child { border-right: var(--split-divider-size, 1px) solid rgba(255,255,255,0.1); }
-.terminal-pane--focused { box-shadow: inset 0 0 0 1px var(--focus-color, rgba(99,102,241,0.45)); }
+.unfocused-fill-overlay { position: absolute; inset: 0; z-index: 2; pointer-events: none; transition: opacity 0.15s ease, background 0.15s ease; }
+.terminal-pane--focused { box-shadow: inset 0 0 0 1px rgba(99,102,241,0.45); }
 .terminal-pane:focus { outline: none; }
-.terminal-pane:focus-visible { box-shadow: inset 0 0 0 1px var(--focus-color, rgba(99,102,241,0.45)), 0 0 0 2px var(--focus-color-dim, rgba(99,102,241,0.25)); }
+.terminal-pane:focus-visible { box-shadow: inset 0 0 0 1px rgba(99,102,241,0.45), 0 0 0 2px rgba(99,102,241,0.25); }
 .split-preview-hint { font-size: 10px; color: var(--text); margin: 0; line-height: 1.4; }
 .term-line { display: flex; align-items: baseline; gap: 6px; white-space: pre-wrap; word-break: break-all; }
 .term-prompt-path { font-weight: 500; }

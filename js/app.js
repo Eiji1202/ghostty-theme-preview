@@ -244,11 +244,7 @@ function updateCustomColors() {
 }
 
 function updateFocusColor() {
-  var hex = document.getElementById('focus-color').value;
-  var rgb = hexToRgb(hex);
-  var split = document.getElementById('terminal-split');
-  split.style.setProperty('--focus-color', 'rgba(' + rgb + ',0.45)');
-  split.style.setProperty('--focus-color-dim', 'rgba(' + rgb + ',0.25)');
+  applyTerminalSplitStyles();
   renderConfig();
 }
 

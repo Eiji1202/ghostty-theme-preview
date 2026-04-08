@@ -234,15 +234,16 @@
           </div>
           <div class="setting-row">
             <div class="setting-row-header">
-              <span class="setting-key" id="key-focus-color">focused-split-color</span>
+              <span class="setting-key" id="key-focus-color">unfocused-split-fill</span>
               <div class="toggle">
-                <input type="checkbox" id="tog-focus-color" checked onchange="onToggle('focus-color'); updateFocusColor();" aria-label="include focused-split-color">
+                <input type="checkbox" id="tog-focus-color" onchange="onToggle('focus-color'); updateFocusColor();" aria-label="include unfocused-split-fill">
                 <label for="tog-focus-color" class="toggle-track"></label>
                 <span class="toggle-thumb" aria-hidden="true"></span>
               </div>
             </div>
-            <div class="setting-control" id="ctrl-focus-color">
-              <input type="color" class="setting-input" id="focus-color" value="#6366f1" oninput="updateFocusColor()" style="height:32px;padding:2px 4px;cursor:pointer;" aria-labelledby="key-focus-color">
+            <p class="setting-hint">The color to fill unfocused panes with (a tint applied together with <code>unfocused-split-opacity</code>).</p>
+            <div class="setting-control disabled" id="ctrl-focus-color">
+              <input type="color" class="setting-input" id="focus-color" value="#000000" oninput="updateFocusColor()" style="height:32px;padding:2px 4px;cursor:pointer;" aria-labelledby="key-focus-color">
             </div>
           </div>
           <div class="setting-row">

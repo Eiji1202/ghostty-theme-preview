@@ -7,16 +7,43 @@ function applyTerminalSplitStyles() {
   var right = document.getElementById('terminal-pane-right');
   if (!left || !right) return;
   var unf = parseFloat(document.getElementById('unfocused-opacity').value);
+
+  // unfocused-split-fill: color overlay on unfocused pane
+  var fillEl = document.getElementById('focus-color');
+  var fillOn = document.getElementById('tog-focus-color').checked;
+  var fillColor = fillOn && fillEl ? fillEl.value : 'transparent';
+  var fillAlpha = fillOn ? (1 - unf) : 0; // dimming amount
+
+  function setFill(el, active) {
+    var overlay = el.querySelector('.unfocused-fill-overlay');
+    if (!overlay) {
+      overlay = document.createElement('div');
+      overlay.className = 'unfocused-fill-overlay';
+      el.appendChild(overlay);
+    }
+    if (active && fillOn) {
+      overlay.style.background = fillColor;
+      overlay.style.opacity = String(fillAlpha);
+    } else {
+      overlay.style.background = 'transparent';
+      overlay.style.opacity = '0';
+    }
+  }
+
   if (focusedSplit === 'left') {
     left.style.opacity = '1';
     right.style.opacity = String(unf);
     left.classList.add('terminal-pane--focused');
     right.classList.remove('terminal-pane--focused');
+    setFill(left, false);
+    setFill(right, true);
   } else {
     right.style.opacity = '1';
     left.style.opacity = String(unf);
     right.classList.add('terminal-pane--focused');
     left.classList.remove('terminal-pane--focused');
+    setFill(right, false);
+    setFill(left, true);
   }
 }
 
