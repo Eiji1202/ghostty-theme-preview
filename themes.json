@@ -6164,6 +6164,98 @@
     ]
   },
   {
+    "name": "London Bonfire Night",
+    "bg": "#0e0c0e",
+    "fg": "#e8e0c8",
+    "colors": [
+      "#1a1418",
+      "#d65a3a",
+      "#6a8a4a",
+      "#e8b048",
+      "#5a7ab8",
+      "#d76aa8",
+      "#88a8c8",
+      "#e8e0c8",
+      "#44403c",
+      "#ec7654",
+      "#88a868",
+      "#f5c25c",
+      "#7a96d0",
+      "#ed85bc",
+      "#a0bcd6",
+      "#fdf6df"
+    ]
+  },
+  {
+    "name": "London Columbia Road",
+    "bg": "#f8f5ec",
+    "fg": "#1f3a2f",
+    "colors": [
+      "#2a2520",
+      "#c14a4a",
+      "#5a8a3a",
+      "#d4a82c",
+      "#3a7a8a",
+      "#c45f8a",
+      "#5fa89a",
+      "#1f3a2f",
+      "#756a55",
+      "#d96a6a",
+      "#6ea050",
+      "#d8af33",
+      "#5598ab",
+      "#d97aa3",
+      "#7ac0b0",
+      "#142217"
+    ]
+  },
+  {
+    "name": "London Embankment Dusk",
+    "bg": "#161f2c",
+    "fg": "#e8eef2",
+    "colors": [
+      "#1c2533",
+      "#c5573f",
+      "#6a8e85",
+      "#e2bd5c",
+      "#5e87b3",
+      "#9b86a8",
+      "#82a8b8",
+      "#e8eef2",
+      "#4a566a",
+      "#e07050",
+      "#88aaa3",
+      "#f0cd6c",
+      "#82a4cc",
+      "#b09bc0",
+      "#a0c2d0",
+      "#fafbfc"
+    ]
+  },
+  {
+    "name": "London Soho Night",
+    "bg": "#1a1612",
+    "fg": "#ebe0c8",
+    "colors": [
+      "#2a221a",
+      "#d4574a",
+      "#8fae5e",
+      "#e8b04a",
+      "#6a8fb5",
+      "#d96aa5",
+      "#9ab8a8",
+      "#ebe0c8",
+      "#6b5a48",
+      "#e87765",
+      "#aac874",
+      "#f4c560",
+      "#88a8c8",
+      "#ed85b8",
+      "#b8cebd",
+      "#f8eed2"
+    ]
+  },
+  {
     "name": "Lovelace",
     "bg": "#1d1f28",
     "fg": "#fdfdfd",
