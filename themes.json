@@ -46,6 +46,29 @@
     ]
   },
   {
+    "name": "13th Floor",
+    "bg": "#4a0710",
+    "fg": "#f2e2c8",
+    "colors": [
+      "#bdaaad",
+      "#e07f70",
+      "#9eae80",
+      "#d0af63",
+      "#849caf",
+      "#b78ea6",
+      "#7bb2aa",
+      "#f2e2c8",
+      "#c5b4b7",
+      "#e48e81",
+      "#aab88f",
+      "#d6b976",
+      "#93a8b9",
+      "#c09cb1",
+      "#8bbbb4",
+      "#f4e5cf"
+    ]
+  },
+  {
     "name": "3024 Day",
     "bg": "#f7f7f7",
     "fg": "#4a4543",
@@ -135,6 +158,29 @@
       "#d58bf0",
       "#52c4c0",
       "#dfe5ee"
+    ]
+  },
+  {
+    "name": "Abandoned",
+    "bg": "#433d2d",
+    "fg": "#eee9d7",
+    "colors": [
+      "#c2c0ae",
+      "#e69a79",
+      "#9db692",
+      "#d7c06e",
+      "#8eafb8",
+      "#bda6b4",
+      "#82bbb4",
+      "#eee9d7",
+      "#c9c8b8",
+      "#e9a689",
+      "#a9bf9f",
+      "#dcc87f",
+      "#9cb9c1",
+      "#bea6b4",
+      "#91c3bd",
+      "#f0ecdc"
     ]
   },
   {
@@ -943,6 +989,29 @@
     ]
   },
   {
+    "name": "Autumn After Dark",
+    "bg": "#57210d",
+    "fg": "#f8e9cf",
+    "colors": [
+      "#c8b6a6",
+      "#f18f67",
+      "#9ac47c",
+      "#e9bf55",
+      "#83b8d0",
+      "#c794af",
+      "#78c4b8",
+      "#f8e9cf",
+      "#cfbfb1",
+      "#f39c79",
+      "#a6cb8c",
+      "#ecc769",
+      "#92c1d6",
+      "#cea1b9",
+      "#88cbc1",
+      "#f9ecd5"
+    ]
+  },
+  {
     "name": "Ayu",
     "bg": "#0b0e14",
     "fg": "#bfbdb6",
@@ -1173,6 +1242,29 @@
     ]
   },
   {
+    "name": "Belfry",
+    "bg": "#4a0c18",
+    "fg": "#fff0dc",
+    "colors": [
+      "#bcaeb0",
+      "#f1817b",
+      "#9dcc91",
+      "#e7c56d",
+      "#91bfe0",
+      "#d29ac0",
+      "#82cbc7",
+      "#fff0dc",
+      "#d0c3c5",
+      "#f59c96",
+      "#b2d8a7",
+      "#efd58b",
+      "#accfe8",
+      "#dfb3cf",
+      "#a1d9d5",
+      "#fffaf0"
+    ]
+  },
+  {
     "name": "Birds Of Paradise",
     "bg": "#2a1f1d",
     "fg": "#e0dbb7",
@@ -1216,6 +1308,29 @@
       "#e4b9ed",
       "#a1e1e7",
       "#fffdf7"
+    ]
+  },
+  {
+    "name": "Black Cat",
+    "bg": "#180a2b",
+    "fg": "#f5edff",
+    "colors": [
+      "#a9a0b6",
+      "#ff8992",
+      "#9fda65",
+      "#edc85e",
+      "#8bbdf0",
+      "#c78bf0",
+      "#76d2d1",
+      "#f5edff",
+      "#b3abbf",
+      "#ff979f",
+      "#abde77",
+      "#efcf71",
+      "#99c5f2",
+      "#ce99f2",
+      "#86d7d7",
+      "#f6efff"
     ]
   },
   {
@@ -1495,6 +1610,29 @@
     ]
   },
   {
+    "name": "Blood Moon",
+    "bg": "#4b080d",
+    "fg": "#fff0dc",
+    "colors": [
+      "#bbaaad",
+      "#f17c78",
+      "#9cca8e",
+      "#e5c36b",
+      "#8db9d8",
+      "#cd97b7",
+      "#7fc6c1",
+      "#fff0dc",
+      "#cfbfc1",
+      "#f49894",
+      "#b0d6a3",
+      "#edd389",
+      "#a8cbe2",
+      "#dab0c7",
+      "#9dd5d0",
+      "#fffaf0"
+    ]
+  },
+  {
     "name": "Blue Berry Pie",
     "bg": "#1c0c28",
     "fg": "#babab9",
@@ -1630,6 +1768,29 @@
       "#ce33c0",
       "#6d93bb",
       "#d3d3d3"
+    ]
+  },
+  {
+    "name": "Bone Yard",
+    "bg": "#ead9b8",
+    "fg": "#51463b",
+    "colors": [
+      "#332f28",
+      "#8b342c",
+      "#44583b",
+      "#6c571f",
+      "#374f60",
+      "#60465d",
+      "#365f5c",
+      "#51463b",
+      "#2a2721",
+      "#722b24",
+      "#384830",
+      "#594719",
+      "#2d414f",
+      "#4f394c",
+      "#2c4e4b",
+      "#423930"
     ]
   },
   {
@@ -2024,6 +2185,52 @@
     ]
   },
   {
+    "name": "Candlelight",
+    "bg": "#432708",
+    "fg": "#f8e7c4",
+    "colors": [
+      "#c8b99e",
+      "#e89661",
+      "#9ab57c",
+      "#dfbb53",
+      "#83aebd",
+      "#bc91a4",
+      "#79b8ae",
+      "#f8e7c4",
+      "#cfc1aa",
+      "#eba374",
+      "#a6be8c",
+      "#e3c368",
+      "#92b8c5",
+      "#c49eaf",
+      "#89c1b8",
+      "#f9eacb"
+    ]
+  },
+  {
+    "name": "Candy Corn",
+    "bg": "#fff0d2",
+    "fg": "#51463b",
+    "colors": [
+      "#322b24",
+      "#9b2f12",
+      "#46612d",
+      "#785711",
+      "#36516b",
+      "#69416e",
+      "#28656a",
+      "#51463b",
+      "#29231e",
+      "#7f270f",
+      "#395025",
+      "#62470e",
+      "#2c4258",
+      "#56355a",
+      "#215357",
+      "#423930"
+    ]
+  },
+  {
     "name": "Canyon Shadow",
     "bg": "#513554",
     "fg": "#fff0df",
@@ -2044,6 +2251,29 @@
       "#edc5e5",
       "#b4eae5",
       "#fffaf3"
+    ]
+  },
+  {
+    "name": "Canyon Walnut",
+    "bg": "#332014",
+    "fg": "#f8e4c6",
+    "colors": [
+      "#c7ad93",
+      "#ed9371",
+      "#b3c98a",
+      "#f2bb5f",
+      "#8fbde7",
+      "#c9a0d9",
+      "#8dd1ce",
+      "#f8e4c6",
+      "#dcc3a8",
+      "#ffb08c",
+      "#c8dd9f",
+      "#ffd27e",
+      "#abd1f5",
+      "#ddb7eb",
+      "#a9e2db",
+      "#fff5dc"
     ]
   },
   {
@@ -2737,6 +2967,29 @@
     ]
   },
   {
+    "name": "Cobweb",
+    "bg": "#20272d",
+    "fg": "#eef1f3",
+    "colors": [
+      "#aeb5ba",
+      "#ed8e88",
+      "#9bc6a3",
+      "#dec575",
+      "#92bad5",
+      "#bba4c9",
+      "#88c8c8",
+      "#eef1f3",
+      "#c3c9cd",
+      "#f0a7a1",
+      "#afd3b6",
+      "#e8d493",
+      "#abcde0",
+      "#cab8d4",
+      "#a4d6d6",
+      "#ffffff"
+    ]
+  },
+  {
     "name": "Coffee Theme",
     "bg": "#f5deb3",
     "fg": "#000000",
@@ -2829,6 +3082,29 @@
     ]
   },
   {
+    "name": "Count Terminal",
+    "bg": "#480814",
+    "fg": "#f7e6dc",
+    "colors": [
+      "#bca9ad",
+      "#ef7e88",
+      "#99c58e",
+      "#e1c467",
+      "#88b5d7",
+      "#c58bb9",
+      "#7bc6bf",
+      "#f7e6dc",
+      "#c4b3b7",
+      "#f18d96",
+      "#a5cc9c",
+      "#e5cb79",
+      "#96bedc",
+      "#cc99c1",
+      "#8bcdc7",
+      "#f8e9e0"
+    ]
+  },
+  {
     "name": "Crayon Pony Fish",
     "bg": "#150707",
     "fg": "#68525a",
@@ -2895,6 +3171,75 @@
       "#fa8f45",
       "#f7b13c",
       "#fff3c4"
+    ]
+  },
+  {
+    "name": "Crypt Keeper",
+    "bg": "#353b24",
+    "fg": "#f2efd5",
+    "colors": [
+      "#bfc1ad",
+      "#e89a78",
+      "#a6cc8c",
+      "#dec46c",
+      "#91bdd0",
+      "#c9a1b5",
+      "#82c9bf",
+      "#f2efd5",
+      "#d0d1c0",
+      "#eeae8f",
+      "#b9d8a3",
+      "#e8d58a",
+      "#a9ccd9",
+      "#d6b8c7",
+      "#9fd7cf",
+      "#fff9e8"
+    ]
+  },
+  {
+    "name": "Crystal Ball",
+    "bg": "#2b1050",
+    "fg": "#f2edff",
+    "colors": [
+      "#b7acc9",
+      "#ef8ca4",
+      "#9ed08c",
+      "#dfc86b",
+      "#82c8ef",
+      "#c18df0",
+      "#77d7de",
+      "#f2edff",
+      "#c0b6cf",
+      "#f19aaf",
+      "#aad69a",
+      "#e3cf7d",
+      "#91cff1",
+      "#c89bf2",
+      "#87dce2",
+      "#f4efff"
+    ]
+  },
+  {
+    "name": "Cursed VHS",
+    "bg": "#1c082c",
+    "fg": "#f4edff",
+    "colors": [
+      "#afa3bd",
+      "#ff6d98",
+      "#8ed69e",
+      "#e5c85f",
+      "#62b9f2",
+      "#d16cf0",
+      "#4bd9e1",
+      "#f4edff",
+      "#b9aec5",
+      "#ff7fa4",
+      "#9cdbaa",
+      "#e8cf72",
+      "#75c1f4",
+      "#d77ef2",
+      "#61dee5",
+      "#f5efff"
     ]
   },
   {
@@ -3519,6 +3864,29 @@
     ]
   },
   {
+    "name": "Desert Morning",
+    "bg": "#d8b590",
+    "fg": "#352417",
+    "colors": [
+      "#4a3529",
+      "#7e2c23",
+      "#294f2e",
+      "#62430b",
+      "#274978",
+      "#61386a",
+      "#1a4f51",
+      "#352417",
+      "#5c4336",
+      "#7d3025",
+      "#304e33",
+      "#60430e",
+      "#274875",
+      "#603b6a",
+      "#1e4f52",
+      "#24170e"
+    ]
+  },
+  {
     "name": "Desert Rose",
     "bg": "#5a2032",
     "fg": "#fff0df",
@@ -4022,6 +4390,29 @@
       "#ddbfff",
       "#68ead3",
       "#f4f8fd"
+    ]
+  },
+  {
+    "name": "Ectoplasm",
+    "bg": "#06454a",
+    "fg": "#effffb",
+    "colors": [
+      "#c1d0cf",
+      "#f19b8d",
+      "#78e0aa",
+      "#d7dd5e",
+      "#76c9ef",
+      "#afa1e9",
+      "#58e0d6",
+      "#effffb",
+      "#c8d6d5",
+      "#f3a79b",
+      "#88e4b4",
+      "#dce171",
+      "#86cff1",
+      "#b4a7eb",
+      "#6ce4db",
+      "#f1fffb"
     ]
   },
   {
@@ -4555,25 +4946,48 @@
   },
   {
     "name": "EVH FrankenTone",
-    "bg": "#0a0a0a",
-    "fg": "#e10600",
+    "bg": "#76231f",
+    "fg": "#f7ede5",
     "colors": [
-      "#151515",
-      "#e10600",
-      "#8fbd32",
-      "#ffd400",
-      "#2b82ff",
-      "#ff2d6d",
-      "#20bde5",
-      "#f4f4f4",
-      "#474747",
-      "#ff5555",
-      "#b8e986",
-      "#ffe066",
-      "#66b3ff",
-      "#ff8fb1",
-      "#22d3ee",
-      "#f7f7f7"
+      "#e7d8d0",
+      "#ffb4a5",
+      "#e6d27e",
+      "#f4d45d",
+      "#a9cbe7",
+      "#d9c3c9",
+      "#a7d7d7",
+      "#f7ede5",
+      "#c9b8b1",
+      "#ffd0bf",
+      "#f2e4a0",
+      "#ffe27d",
+      "#c5ddf3",
+      "#f0d8de",
+      "#c4e9e8",
+      "#ffffff"
+    ]
+  },
+  {
+    "name": "eyesclosed",
+    "bg": "#111214",
+    "fg": "#bbbcc7",
+    "colors": [
+      "#383b4a",
+      "#ffaba2",
+      "#779bb0",
+      "#ecd8ae",
+      "#b7c8cb",
+      "#9a9dae",
+      "#d8d0d0",
+      "#bbbcc7",
+      "#696d7d",
+      "#ffaba2",
+      "#779bb0",
+      "#ecd8ae",
+      "#b7c8cb",
+      "#9a9dae",
+      "#d8d0d0",
+      "#cdcfd1"
     ]
   },
   {
@@ -5635,6 +6049,52 @@
     ]
   },
   {
+    "name": "Graveyard Shift",
+    "bg": "#2e4240",
+    "fg": "#eef2e8",
+    "colors": [
+      "#c0cbc5",
+      "#ed9b86",
+      "#9fc79a",
+      "#dfc977",
+      "#91bcc8",
+      "#b6a5c0",
+      "#87c7c2",
+      "#eef2e8",
+      "#c8d1cc",
+      "#efa795",
+      "#abcea6",
+      "#e3cf87",
+      "#9ec4cf",
+      "#bfb0c8",
+      "#95cec9",
+      "#f0f4eb"
+    ]
+  },
+  {
+    "name": "Great Pumpkin",
+    "bg": "#f98128",
+    "fg": "#34251c",
+    "colors": [
+      "#24150e",
+      "#62190d",
+      "#29391a",
+      "#443106",
+      "#16374b",
+      "#51234c",
+      "#103a40",
+      "#34251c",
+      "#1e110b",
+      "#58160b",
+      "#283719",
+      "#483406",
+      "#143142",
+      "#421d3e",
+      "#113d44",
+      "#2b1e17"
+    ]
+  },
+  {
     "name": "Green Phosphor CRT",
     "bg": "#0b0f0b",
     "fg": "#33ff33",
@@ -6026,6 +6486,52 @@
     ]
   },
   {
+    "name": "Harvest Moon",
+    "bg": "#0d3557",
+    "fg": "#fff1d2",
+    "colors": [
+      "#b8c2c6",
+      "#ee997d",
+      "#9bca8e",
+      "#edc667",
+      "#8fc1dd",
+      "#c7a1c8",
+      "#80ced0",
+      "#fff1d2",
+      "#cbd3d6",
+      "#f2ae92",
+      "#b0d6a4",
+      "#f4d585",
+      "#aad1e7",
+      "#d4b8d5",
+      "#9edbdc",
+      "#fff9e8"
+    ]
+  },
+  {
+    "name": "Haunted House",
+    "bg": "#23394e",
+    "fg": "#f1f4ed",
+    "colors": [
+      "#b9c2c9",
+      "#ed9b8c",
+      "#9fcba7",
+      "#e5cb7c",
+      "#9fc7e5",
+      "#c2add8",
+      "#93d0d0",
+      "#f1f4ed",
+      "#ccd3d8",
+      "#f1afa3",
+      "#b3d8ba",
+      "#edda99",
+      "#b8d6ec",
+      "#d0c2e0",
+      "#addddd",
+      "#ffffff"
+    ]
+  },
+  {
     "name": "Havn Daggry",
     "bg": "#f8f9fb",
     "fg": "#3b4a7a",
@@ -6187,6 +6693,29 @@
     ]
   },
   {
+    "name": "Hellfire",
+    "bg": "#5b0e05",
+    "fg": "#f8e2c7",
+    "colors": [
+      "#c5afa7",
+      "#f2815f",
+      "#a9bd72",
+      "#e8bd4e",
+      "#83a9c2",
+      "#bf879f",
+      "#76b6ad",
+      "#f8e2c7",
+      "#ccb9b2",
+      "#f49072",
+      "#b3c583",
+      "#ebc563",
+      "#92b3c9",
+      "#c795ab",
+      "#86bfb7",
+      "#f9e5ce"
+    ]
+  },
+  {
     "name": "High Desert Snow",
     "bg": "#f9fafb",
     "fg": "#1f2937",
@@ -6276,6 +6805,29 @@
       "#dfe2f1",
       "#9c637a",
       "#f5f7ff"
+    ]
+  },
+  {
+    "name": "Hocus Pocus",
+    "bg": "#431455",
+    "fg": "#f6edff",
+    "colors": [
+      "#c2b1ca",
+      "#f18b8c",
+      "#9bd674",
+      "#e9c657",
+      "#8fc1e8",
+      "#d187e4",
+      "#7bd3d1",
+      "#f6edff",
+      "#c9bad0",
+      "#f3999a",
+      "#a7db85",
+      "#eccd6b",
+      "#9cc8eb",
+      "#d795e7",
+      "#8bd8d7",
+      "#f7efff"
     ]
   },
   {
@@ -7061,6 +7613,29 @@
     ]
   },
   {
+    "name": "Jack O' Lantern",
+    "bg": "#4a1b08",
+    "fg": "#fff0d5",
+    "colors": [
+      "#bdb2a4",
+      "#ff8b61",
+      "#8dcc7a",
+      "#f3c969",
+      "#8fc5e8",
+      "#dca2c9",
+      "#7fd3cf",
+      "#fff0d5",
+      "#d1c7ba",
+      "#ffa07c",
+      "#a5d99a",
+      "#f8d98a",
+      "#acd5ef",
+      "#e8bad8",
+      "#9fe1dc",
+      "#fffaf0"
+    ]
+  },
+  {
     "name": "Jackie Brown",
     "bg": "#2c1d16",
     "fg": "#ffcc2f",
@@ -7219,6 +7794,29 @@
       "#e16c87",
       "#b7c9ef",
       "#d5e5f1"
+    ]
+  },
+  {
+    "name": "Jute Espresso",
+    "bg": "#604331",
+    "fg": "#fff0d7",
+    "colors": [
+      "#e0c7ab",
+      "#ffc0a1",
+      "#c4ddad",
+      "#fbd18a",
+      "#a9cbea",
+      "#d8b9dc",
+      "#a9ded6",
+      "#fff0d7",
+      "#efd9c1",
+      "#ffd1b3",
+      "#d5e9c1",
+      "#ffe0a4",
+      "#c2ddf7",
+      "#e9cdea",
+      "#c2ece3",
+      "#fff9e9"
     ]
   },
   {
@@ -8073,6 +8671,52 @@
     ]
   },
   {
+    "name": "Lit Cell",
+    "bg": "#0c110e",
+    "fg": "#cfddd3",
+    "colors": [
+      "#1c2420",
+      "#ff6b6b",
+      "#3df2a0",
+      "#ffb000",
+      "#6fb3f2",
+      "#c99af2",
+      "#48d6cf",
+      "#b9c7be",
+      "#758679",
+      "#ff9494",
+      "#86ffc6",
+      "#ffcb5c",
+      "#9ccbff",
+      "#ddbcff",
+      "#86ece6",
+      "#edefea"
+    ]
+  },
+  {
+    "name": "Lit Cell Light",
+    "bg": "#f1f4ef",
+    "fg": "#1b2620",
+    "colors": [
+      "#1b2620",
+      "#aa2826",
+      "#09663f",
+      "#834d00",
+      "#225b9d",
+      "#7e3e98",
+      "#096561",
+      "#a9b4ad",
+      "#5f6e66",
+      "#c9382f",
+      "#0c7e4f",
+      "#9e5f00",
+      "#316fb7",
+      "#9a4bb9",
+      "#0c7b75",
+      "#ffffff"
+    ]
+  },
+  {
     "name": "London Bonfire Night",
     "bg": "#0e0c0e",
     "fg": "#e8e0c8",
@@ -8254,6 +8898,29 @@
       "#e500e5",
       "#00cbcb",
       "#e5e5e5"
+    ]
+  },
+  {
+    "name": "Maple Jute",
+    "bg": "#56351f",
+    "fg": "#fbe9d3",
+    "colors": [
+      "#cfb7a1",
+      "#f5a18d",
+      "#b9d8a1",
+      "#f2c87c",
+      "#a8c9ec",
+      "#dbb0dd",
+      "#9ed9d2",
+      "#fbe9d3",
+      "#e2cbb7",
+      "#ffbd9e",
+      "#cfe6b2",
+      "#ffdf9c",
+      "#c2dafa",
+      "#ecc9ec",
+      "#b9e9e0",
+      "#fff7e8"
     ]
   },
   {
@@ -9404,6 +10071,29 @@
       "#e9c8e7",
       "#b7ebe7",
       "#fffdf4"
+    ]
+  },
+  {
+    "name": "Monster Mash",
+    "bg": "#173b0d",
+    "fg": "#f0f5d8",
+    "colors": [
+      "#b8c9ae",
+      "#f09579",
+      "#9ee566",
+      "#e7cf52",
+      "#86c5e8",
+      "#bd91e8",
+      "#72d8cc",
+      "#f0f5d8",
+      "#c1cfb8",
+      "#f2a289",
+      "#aae878",
+      "#ead567",
+      "#95cceb",
+      "#c59eeb",
+      "#83ddd2",
+      "#f2f6dd"
     ]
   },
   {
@@ -11477,6 +12167,29 @@
     ]
   },
   {
+    "name": "Pissed Off Pancakes",
+    "bg": "#1a1208",
+    "fg": "#f8edd7",
+    "colors": [
+      "#aaa59c",
+      "#db533e",
+      "#7cb85b",
+      "#e4b33f",
+      "#4aa3ff",
+      "#b35cff",
+      "#33d6c9",
+      "#f8edd7",
+      "#c6c0b5",
+      "#ff6b4d",
+      "#a4dc79",
+      "#f7d867",
+      "#73b9ff",
+      "#cd8aff",
+      "#62e5d9",
+      "#fff4d2"
+    ]
+  },
+  {
     "name": "Pnevma",
     "bg": "#1c1c1c",
     "fg": "#d0d0d0",
@@ -11592,6 +12305,52 @@
     ]
   },
   {
+    "name": "Poison Apple",
+    "bg": "#560b13",
+    "fg": "#f7e8d8",
+    "colors": [
+      "#bca8aa",
+      "#ef8178",
+      "#9ed25f",
+      "#e5c45b",
+      "#86b9d8",
+      "#c28bb9",
+      "#7cc4bc",
+      "#f7e8d8",
+      "#c4b2b4",
+      "#f19088",
+      "#aad772",
+      "#e8cb6f",
+      "#95c1dd",
+      "#c999c1",
+      "#8ccbc4",
+      "#f8ebdd"
+    ]
+  },
+  {
+    "name": "Poltergeist",
+    "bg": "#06444b",
+    "fg": "#f0ffff",
+    "colors": [
+      "#c0d1d2",
+      "#ff9c91",
+      "#8ce0b0",
+      "#e9d06c",
+      "#8ed4ed",
+      "#c5a7e8",
+      "#77e1df",
+      "#f0ffff",
+      "#c8d7d7",
+      "#ffa89e",
+      "#9ae4b9",
+      "#ecd67e",
+      "#9cd9ef",
+      "#ccb2eb",
+      "#87e5e3",
+      "#f2ffff"
+    ]
+  },
+  {
     "name": "Popping And Locking",
     "bg": "#181921",
     "fg": "#ebdbb2",
@@ -11635,6 +12394,29 @@
       "#862ad2",
       "#007f8f",
       "#1b1e25"
+    ]
+  },
+  {
+    "name": "Possessed Toaster",
+    "bg": "#0e0f0d",
+    "fg": "#e8dcc0",
+    "colors": [
+      "#a9aaa3",
+      "#e0503b",
+      "#6aa84f",
+      "#e0a62e",
+      "#3d9aff",
+      "#a855f7",
+      "#2dd4bf",
+      "#e8dcc0",
+      "#c2c3bd",
+      "#ff5a3c",
+      "#9edb6f",
+      "#f4ca4d",
+      "#60b5ff",
+      "#c084fc",
+      "#4ee6d3",
+      "#fff5d7"
     ]
   },
   {
@@ -11819,6 +12601,52 @@
       "#edc0dd",
       "#a6e7e1",
       "#fffaf0"
+    ]
+  },
+  {
+    "name": "Pumpkin Patch",
+    "bg": "#243416",
+    "fg": "#f5efd1",
+    "colors": [
+      "#c3c8af",
+      "#f09870",
+      "#95ce77",
+      "#e8c95a",
+      "#87bfcf",
+      "#c79ab7",
+      "#79c9bb",
+      "#f5efd1",
+      "#cacfb9",
+      "#f2a481",
+      "#a2d487",
+      "#ebcf6e",
+      "#95c7d5",
+      "#cea6c0",
+      "#89cfc3",
+      "#f6f1d7"
+    ]
+  },
+  {
+    "name": "Pumpkin Spice",
+    "bg": "#9a3d08",
+    "fg": "#fff0d8",
+    "colors": [
+      "#d6d3d1",
+      "#dbd1ce",
+      "#d1d7cf",
+      "#d9d4c8",
+      "#ced5d9",
+      "#dad3db",
+      "#cbd5d7",
+      "#fff0d8",
+      "#d7d3d1",
+      "#f5e2dc",
+      "#d1d7d0",
+      "#f6e5c8",
+      "#ced6d9",
+      "#d9d1d9",
+      "#cbd6d7",
+      "#fff2dd"
     ]
   },
   {
@@ -12581,6 +13409,29 @@
     ]
   },
   {
+    "name": "Salem",
+    "bg": "#0f2a33",
+    "fg": "#e6dcc1",
+    "colors": [
+      "#9daeb3",
+      "#e36b61",
+      "#94c17f",
+      "#e6bc62",
+      "#78a9f0",
+      "#b477cf",
+      "#69c9c7",
+      "#e6dcc1",
+      "#b6c5c9",
+      "#f06d5f",
+      "#a9d18c",
+      "#f4d58b",
+      "#94b9f4",
+      "#c98de0",
+      "#8bd9d7",
+      "#fff4da"
+    ]
+  },
+  {
     "name": "Sandstone Classic",
     "bg": "#fdf6e3",
     "fg": "#3d5259",
@@ -12673,6 +13524,29 @@
     ]
   },
   {
+    "name": "Scabos Sand",
+    "bg": "#79563b",
+    "fg": "#fff4dc",
+    "colors": [
+      "#fff0d1",
+      "#ffdbc1",
+      "#e1f0b7",
+      "#ffe29b",
+      "#c6e4fc",
+      "#eed2f2",
+      "#bce9e6",
+      "#fff4dc",
+      "#fff5e5",
+      "#ffe6cf",
+      "#eff6d1",
+      "#ffeaba",
+      "#d8ecff",
+      "#f7e0f7",
+      "#d3f5ef",
+      "#fffbed"
+    ]
+  },
+  {
     "name": "Scarlet Protocol",
     "bg": "#1c153d",
     "fg": "#e41951",
@@ -12739,6 +13613,29 @@
       "#d6b2a1",
       "#ade0e0",
       "#e0e0e0"
+    ]
+  },
+  {
+    "name": "Seance",
+    "bg": "#3b2035",
+    "fg": "#f9eddf",
+    "colors": [
+      "#bdb1b8",
+      "#e99b8e",
+      "#a8cf8f",
+      "#e5c779",
+      "#9fc2dc",
+      "#d5a6c8",
+      "#8fcfc8",
+      "#f9eddf",
+      "#d0c5ca",
+      "#efb0a5",
+      "#bbdba5",
+      "#edd796",
+      "#b8d1e5",
+      "#e0bfd5",
+      "#addbd5",
+      "#fffaf2"
     ]
   },
   {
@@ -13521,6 +14418,29 @@
       "#a75b73",
       "#008396",
       "#ffffff"
+    ]
+  },
+  {
+    "name": "Sierra Gold",
+    "bg": "#392414",
+    "fg": "#f9e6c7",
+    "colors": [
+      "#cbb49b",
+      "#f4a17c",
+      "#a8c98b",
+      "#f3c873",
+      "#9dc5ed",
+      "#d6a5d8",
+      "#92d4d4",
+      "#f9e6c7",
+      "#e0cdb5",
+      "#ffc29d",
+      "#c3dca3",
+      "#ffdb91",
+      "#b9d9fa",
+      "#e7bde9",
+      "#afe6e2",
+      "#fff5df"
     ]
   },
   {
@@ -14858,6 +15778,29 @@
     ]
   },
   {
+    "name": "The Fog",
+    "bg": "#294552",
+    "fg": "#eef4f3",
+    "colors": [
+      "#c0ced2",
+      "#ee9d8b",
+      "#9bc8ad",
+      "#dec978",
+      "#93c3d6",
+      "#baadca",
+      "#87ced0",
+      "#eef4f3",
+      "#c8d4d7",
+      "#f0a999",
+      "#a7cfb7",
+      "#e2cf88",
+      "#a0cadb",
+      "#bfb2ce",
+      "#95d4d6",
+      "#f0f5f4"
+    ]
+  },
+  {
     "name": "The Hulk",
     "bg": "#1b1d1e",
     "fg": "#b5b5b5",
@@ -14901,6 +15844,29 @@
       "#66368e",
       "#004a57",
       "#414141"
+    ]
+  },
+  {
+    "name": "Thirteen",
+    "bg": "#260607",
+    "fg": "#f4ead8",
+    "colors": [
+      "#a99b96",
+      "#d97d75",
+      "#91b994",
+      "#c5ad70",
+      "#849fb4",
+      "#aa8da9",
+      "#75b3a8",
+      "#f4ead8",
+      "#beb0aa",
+      "#e29289",
+      "#a6c8a8",
+      "#d2bd86",
+      "#9db5c6",
+      "#bba4b9",
+      "#91c4ba",
+      "#fff8eb"
     ]
   },
   {
@@ -15341,6 +16307,29 @@
     ]
   },
   {
+    "name": "Trick or Treat",
+    "bg": "#40145f",
+    "fg": "#fff0e3",
+    "colors": [
+      "#bbaec8",
+      "#ff8b82",
+      "#a8dc72",
+      "#f8c94e",
+      "#8fc9f2",
+      "#e78bd8",
+      "#78dce1",
+      "#fff0e3",
+      "#cec1da",
+      "#ffa5a0",
+      "#bde88d",
+      "#fbdc72",
+      "#acd9f7",
+      "#efaae3",
+      "#99e7ea",
+      "#fffaf2"
+    ]
+  },
+  {
     "name": "Turquoise Trail",
     "bg": "#075153",
     "fg": "#fff0d5",
@@ -15453,6 +16442,29 @@
       "#e681ff",
       "#69fcd3",
       "#f9f9f5"
+    ]
+  },
+  {
+    "name": "Undead",
+    "bg": "#3d3c1c",
+    "fg": "#f3edcf",
+    "colors": [
+      "#c0bd9f",
+      "#e69a72",
+      "#a8c97c",
+      "#d9c164",
+      "#91bdb5",
+      "#bd9eb0",
+      "#83c5b5",
+      "#f3edcf",
+      "#d1ceb2",
+      "#ecae8b",
+      "#bad598",
+      "#e4d181",
+      "#a8ccc4",
+      "#cdb6c1",
+      "#9dd4c7",
+      "#fff8e5"
     ]
   },
   {
@@ -16051,6 +17063,52 @@
       "#efccfd",
       "#69abc5",
       "#d3d3d3"
+    ]
+  },
+  {
+    "name": "Witches' Brew",
+    "bg": "#073b25",
+    "fg": "#efffdc",
+    "colors": [
+      "#aec2b4",
+      "#f19a72",
+      "#9be86b",
+      "#f0cc58",
+      "#86c8e3",
+      "#d99ed4",
+      "#7ad9ce",
+      "#efffdc",
+      "#c3d2c8",
+      "#f6ae8c",
+      "#b3ef88",
+      "#f6dc7b",
+      "#a4d7eb",
+      "#e5b7df",
+      "#9ae5dc",
+      "#fbfff3"
+    ]
+  },
+  {
+    "name": "Witching Hour",
+    "bg": "#261044",
+    "fg": "#f5edff",
+    "colors": [
+      "#b9aec8",
+      "#f18a9d",
+      "#a4d66e",
+      "#e9c86b",
+      "#91c4ed",
+      "#c995f0",
+      "#80d4d2",
+      "#f5edff",
+      "#cec3dc",
+      "#f5a6b4",
+      "#bae187",
+      "#f1d98a",
+      "#add5f3",
+      "#d9b1f5",
+      "#a0e1df",
+      "#fffaff"
     ]
   },
   {
